@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-main {
-    background-color: lightcoral;
+//RESET
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #343138;
 }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 //Models
 use App\Models\Project;
@@ -12,13 +13,15 @@ class ProjectSeeder extends Seeder
 {
     public function run(): void
     {
-        for ($i=0; $i <= 10; $i++) { 
-            $elem = new Project();
-            $elem -> project_title=fake()->domainName();
-            $elem -> url=fake()->url();
-            $elem -> description=fake()->paragraph();
-            $elem -> date_creation=fake()->date();
-            $elem -> save();
+        Project::truncate();
+
+        for ($i=0; $i < 10; $i++) { 
+            $project = new Project();
+            $project -> title=fake()->sentence();
+            $project -> slug=Str::slug($project->title);
+            $project -> url=fake()->url();
+            $project -> description=fake()->paragraph();
+            $project -> save();
         }
     }
 }

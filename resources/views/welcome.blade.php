@@ -5,11 +5,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="text-center text-primary">
-                        Welcome!
-                    </h1>
-                    <br>
-                    La welcome page è una pagina pubblica (NON protetta)
+                    <h1>Pagina pubblica</h1>
                 </div>
             </div>
         </div>
