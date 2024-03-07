@@ -21,7 +21,7 @@
             <div class="card-body">
                 <ul>
                     <li>
-                        Data di creazione: {{ $project->created_at->format('d/m/Y - H:i') }}
+                        Data creazione: {{ $project->created_at->format('d/m/Y - H:i') }}
                     </li>
                 </ul>
                 <p>

@@ -12,7 +12,8 @@
                     <a class="link-hover nav-links" href="{{ route('admin.projects.index') }}">Home</a>
                 </div>
             </div>
-            <div class="col d-flex justify-content-end align-items-center py-2">
+            <div class="col d-flex justify-content-around  align-items-center py-2">
+                <p class="text-light">Welcome {{ auth()->user()->name }}!</p>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit" class="btn btn-outline-info">

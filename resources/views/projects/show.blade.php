@@ -7,7 +7,7 @@
         Torna alla Home
     </a>
 </div>
-<h1 class="text-light text-center">
+<h1 class="welcome">
     {{ $project->title }}
 </h1>
 
@@ -32,4 +32,16 @@
 @endsection
 
 <style lang="scss" scoped>
+    .card {
+        box-shadow: 0 0 10px white;
+    }
+
+    .welcome {
+        background-color: #4CB1A2;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        transition: ease 0.5s;
+        box-shadow: 0 0 10px white;
+    }
 </style>

@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-    <h1 class="text-light">Projects</h1>
+    <h1 class="welcome mt-3 mb-5 ">Projects</h1>
     <div class="row row-cols-4">
         @foreach ($projects as $project)
         <div class="col mb-3">    
@@ -23,3 +23,18 @@
         @endforeach
     </div>
 @endsection
+
+<style lang="scss" scoped>
+    .card {
+        box-shadow: 0 0 10px white;
+    }
+
+    .welcome {
+        background-color: #4CB1A2;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        transition: ease 0.5s;
+        box-shadow: 0 0 10px white;
+    }
+</style>

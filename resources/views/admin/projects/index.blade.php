@@ -35,7 +35,7 @@
                             <td>{{ $project->created_at->format('d/m/Y') }}</td>
                             <td>{{ $project->created_at->format('H:i') }}</td>
                             <td>
-                                <a href="{{ route('admin.projects.edit', ['project' => $project->id]) }}" class="btn btn-info">
+                                <a href="{{ route('admin.projects.edit', ['project' => $project->id]) }}" class="btn btn-info mb-3">
                                     Modifica
                                 </a>
                                 <form onsubmit="return confirm('Sei sicuro di voler eliminare questo progetto?');"
